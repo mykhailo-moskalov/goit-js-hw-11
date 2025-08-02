@@ -1,3 +1,4 @@
+import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
@@ -11,7 +12,6 @@ import {
 
 const form = document.querySelector('.form');
 const searchInput = document.querySelector('[type="text"]');
-const submitBtn = document.querySelector('[type="submit"]');
 
 form.addEventListener('submit', e => {
   e.preventDefault();

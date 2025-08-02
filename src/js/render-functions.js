@@ -1,6 +1,11 @@
 import SimpleLightbox from 'simplelightbox';
 
 const gallery = document.querySelector('ul.gallery');
+const galleryLightbox = new SimpleLightbox('.gallery a', {
+  captions: true,
+  captionsData: 'alt',
+  captionDelay: 250,
+});
 
 export function createGallery(images) {
   const markup = images
@@ -39,13 +44,8 @@ export function createGallery(images) {
     )
     .join('');
   gallery.innerHTML = markup;
-  const galleryLightbox = new SimpleLightbox('.gallery a', {
-    captions: true,
-    captionsData: 'alt',
-    captionDelay: 250,
-  });
 
-  //   modalImgWindow.refresh();
+  galleryLightbox.refresh();
 }
 
 export function clearGallery() {
