@@ -1,7 +1,6 @@
 import SimpleLightbox from 'simplelightbox';
 
 const gallery = document.querySelector('ul.gallery');
-const modalImgWindow = new SimpleLightbox('.some-element a');
 
 export function createGallery(images) {
   const markup = images
