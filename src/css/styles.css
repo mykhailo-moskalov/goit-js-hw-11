@@ -52,9 +52,14 @@
 }
 /* GALLERY */
 
-.loader {
-  margin: 0 auto;
+.form {
+  position: relative;
+}
 
+.loader {
+  /* margin: 0 auto; */
+
+  position: absolute;
   transform: rotateZ(45deg);
   perspective: 1000px;
   border-radius: 50%;
@@ -67,8 +72,8 @@
   content: '';
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 92px;
+  left: 50px;
   width: inherit;
   height: inherit;
   border-radius: 50%;
